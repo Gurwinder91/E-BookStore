@@ -1,20 +1,12 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
-/tmp
-/out-tsc
+/E-BookStore.Angular/dist
+
 # dependencies
 /E-BookStore.Angular/node_modules
 
 # IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
 
 # IDE - VSCode
 .vscode/*
@@ -22,23 +14,7 @@
 # IDE - VS
 .vs/*
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/test_result
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
+/E-BookStore.Angular/obj/Debug/netcoreapp2.2/*
 
-# System Files
-.DS_Store
-Thumbs.db
 
-#Coverage
-projects/**/coverage/
-.vs/slnx.sqlite
-.vs/Transfermate-Web/v15/.suo
-.vs/VSWorkspaceState.json
+
