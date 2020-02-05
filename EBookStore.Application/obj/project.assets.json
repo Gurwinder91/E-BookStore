@@ -2,13 +2,26 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
-      "MediatR/8.0.0": {
+      "MediatR/5.0.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/MediatR.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/MediatR.dll": {}
+        }
+      },
+      "MediatR.Extensions.Microsoft.DependencyInjection/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MediatR": "5.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
       "Microsoft.CSharp/4.3.0": {
@@ -1292,17 +1305,30 @@
     }
   },
   "libraries": {
-    "MediatR/8.0.0": {
-      "sha512": "cYSDJ2b/dIiwTLW/ZW/SQcXq9I3WF6KR4D0KN4hxWR08tZqcvcVS1bQXZbsANdQdTQfxx+ZFp5WkHLMyeoR5Zw==",
+    "MediatR/5.0.1": {
+      "sha512": "SgJDOVGMUwC4E+cw4GTy3nv9gye+K68HXPpRselRXwdOgodpwdq6vTVQajyptk7AVhCzBD8c3ccYLhNRugfgfA==",
       "type": "package",
-      "path": "mediatr/8.0.0",
+      "path": "mediatr/5.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net461/MediatR.dll",
+        "lib/net45/MediatR.dll",
+        "lib/netstandard1.3/MediatR.dll",
         "lib/netstandard2.0/MediatR.dll",
-        "mediatr.8.0.0.nupkg.sha512",
+        "mediatr.5.0.1.nupkg.sha512",
         "mediatr.nuspec"
+      ]
+    },
+    "MediatR.Extensions.Microsoft.DependencyInjection/5.0.1": {
+      "sha512": "xR/UDBBkRL+f2fSOb+zTjjMUOu2SyS/PizUE38ENmvDABKvnQsiCmb51C0eTRc3gsqBxuKoUOzPQNbqFjT7eug==",
+      "type": "package",
+      "path": "mediatr.extensions.microsoft.dependencyinjection/5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll",
+        "mediatr.extensions.microsoft.dependencyinjection.5.0.1.nupkg.sha512",
+        "mediatr.extensions.microsoft.dependencyinjection.nuspec"
       ]
     },
     "Microsoft.CSharp/4.3.0": {
@@ -4996,7 +5022,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "EBookStore.Persistence >= 1.0.0",
-      "MediatR >= 8.0.0",
+      "MediatR >= 5.0.1",
+      "MediatR.Extensions.Microsoft.DependencyInjection >= 5.0.1",
       "Microsoft.NETCore.App >= 2.2.0",
       "System.IdentityModel.Tokens.Jwt >= 5.6.0"
     ]
@@ -5049,7 +5076,11 @@
         "dependencies": {
           "MediatR": {
             "target": "Package",
-            "version": "[8.0.0, )"
+            "version": "[5.0.1, )"
+          },
+          "MediatR.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "[5.0.1, )"
           },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",

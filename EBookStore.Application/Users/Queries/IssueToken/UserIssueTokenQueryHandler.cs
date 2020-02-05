@@ -1,6 +1,7 @@
 ﻿using EBookStore.Persistence;
 using EBookStore.Persistence.Models;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -26,7 +27,7 @@ namespace EBookStore.Application.Users.Queries.IssueToken
 
         public async Task<UserIssueTokenModel> Handle(UserIssueTokenQuery request, CancellationToken cancellationToken)
         {
-            var user = await _context.Users.FindAsync(request.Email, request.Password);
+            var user = await _context.Users.SingleOrDefaultAsync(usr => usr.Email == request.Email && usr.Password == request.Password, cancellationToken);
             if (user is null)
             {
                 throw new NotFoundException(nameof(User), request.Email);

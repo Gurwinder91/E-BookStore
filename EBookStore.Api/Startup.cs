@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using EBookStore.Application.Users.Queries.IssueToken;
 using EBookStore.Persistence;
+using MediatR;
+using MediatR.Pipeline;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -31,6 +35,10 @@ namespace EBookStore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestPreProcessorBehavior<,>));
+
+            services.AddMediatR(typeof(UserIssueTokenQuery).GetTypeInfo().Assembly);
 
             services.AddDbContext<EBookStoreDbContext>(options =>
              options.UseNpgsql(Configuration.GetConnectionString("EBookStoreDb")));
