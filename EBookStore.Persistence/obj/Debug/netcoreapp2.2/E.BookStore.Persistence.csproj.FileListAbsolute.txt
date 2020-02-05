@@ -1,0 +1,11 @@
+D:\demos\e-bookstore\E.BookStore.Persistence\bin\Debug\netcoreapp2.2\E.BookStore.Persistence.deps.json
+D:\demos\e-bookstore\E.BookStore.Persistence\bin\Debug\netcoreapp2.2\E.BookStore.Persistence.dll
+D:\demos\e-bookstore\E.BookStore.Persistence\obj\Debug\netcoreapp2.2\E.BookStore.Persistence.csprojAssemblyReference.cache
+D:\demos\e-bookstore\E.BookStore.Persistence\obj\Debug\netcoreapp2.2\E.BookStore.Persistence.csproj.CoreCompileInputs.cache
+D:\demos\e-bookstore\E.BookStore.Persistence\obj\Debug\netcoreapp2.2\E.BookStore.Persistence.AssemblyInfoInputs.cache
+D:\demos\e-bookstore\E.BookStore.Persistence\obj\Debug\netcoreapp2.2\E.BookStore.Persistence.AssemblyInfo.cs
+D:\demos\e-bookstore\E.BookStore.Persistence\bin\Debug\netcoreapp2.2\E.BookStore.Persistence.runtimeconfig.json
+D:\demos\e-bookstore\E.BookStore.Persistence\bin\Debug\netcoreapp2.2\E.BookStore.Persistence.runtimeconfig.dev.json
+D:\demos\e-bookstore\E.BookStore.Persistence\bin\Debug\netcoreapp2.2\E.BookStore.Persistence.pdb
+D:\demos\e-bookstore\E.BookStore.Persistence\obj\Debug\netcoreapp2.2\E.BookStore.Persistence.dll
+D:\demos\e-bookstore\E.BookStore.Persistence\obj\Debug\netcoreapp2.2\E.BookStore.Persistence.pdb

@@ -1,0 +1,12 @@
+D:\demos\e-bookstore\EBookStore.Application\obj\Debug\netcoreapp2.2\EBookStore.Application.csprojAssemblyReference.cache
+D:\demos\e-bookstore\EBookStore.Application\obj\Debug\netcoreapp2.2\EBookStore.Application.csproj.CoreCompileInputs.cache
+D:\demos\e-bookstore\EBookStore.Application\obj\Debug\netcoreapp2.2\EBookStore.Application.AssemblyInfoInputs.cache
+D:\demos\e-bookstore\EBookStore.Application\obj\Debug\netcoreapp2.2\EBookStore.Application.AssemblyInfo.cs
+D:\demos\e-bookstore\EBookStore.Application\bin\Debug\netcoreapp2.2\EBookStore.Application.deps.json
+D:\demos\e-bookstore\EBookStore.Application\bin\Debug\netcoreapp2.2\EBookStore.Application.dll
+D:\demos\e-bookstore\EBookStore.Application\bin\Debug\netcoreapp2.2\EBookStore.Application.pdb
+D:\demos\e-bookstore\EBookStore.Application\bin\Debug\netcoreapp2.2\EBookStore.Persistence.dll
+D:\demos\e-bookstore\EBookStore.Application\bin\Debug\netcoreapp2.2\EBookStore.Persistence.pdb
+D:\demos\e-bookstore\EBookStore.Application\obj\Debug\netcoreapp2.2\EBookStore.Application.csproj.CopyComplete
+D:\demos\e-bookstore\EBookStore.Application\obj\Debug\netcoreapp2.2\EBookStore.Application.dll
+D:\demos\e-bookstore\EBookStore.Application\obj\Debug\netcoreapp2.2\EBookStore.Application.pdb

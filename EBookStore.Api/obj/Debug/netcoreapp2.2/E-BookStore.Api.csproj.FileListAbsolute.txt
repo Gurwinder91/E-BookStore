@@ -1,0 +1,17 @@
+D:\demos\e-bookstore\E-BookStore.Api\bin\Debug\netcoreapp2.2\E-BookStore.Api.deps.json
+D:\demos\e-bookstore\E-BookStore.Api\bin\Debug\netcoreapp2.2\E-BookStore.Api.runtimeconfig.json
+D:\demos\e-bookstore\E-BookStore.Api\bin\Debug\netcoreapp2.2\E-BookStore.Api.runtimeconfig.dev.json
+D:\demos\e-bookstore\E-BookStore.Api\bin\Debug\netcoreapp2.2\E-BookStore.Api.dll
+D:\demos\e-bookstore\E-BookStore.Api\bin\Debug\netcoreapp2.2\E-BookStore.Api.pdb
+D:\demos\e-bookstore\E-BookStore.Api\obj\Debug\netcoreapp2.2\E-BookStore.Api.csprojAssemblyReference.cache
+D:\demos\e-bookstore\E-BookStore.Api\obj\Debug\netcoreapp2.2\E-BookStore.Api.csproj.CoreCompileInputs.cache
+D:\demos\e-bookstore\E-BookStore.Api\obj\Debug\netcoreapp2.2\E-BookStore.Api.RazorAssemblyInfo.cache
+D:\demos\e-bookstore\E-BookStore.Api\obj\Debug\netcoreapp2.2\E-BookStore.Api.RazorAssemblyInfo.cs
+D:\demos\e-bookstore\E-BookStore.Api\obj\Debug\netcoreapp2.2\E-BookStore.Api.AssemblyInfoInputs.cache
+D:\demos\e-bookstore\E-BookStore.Api\obj\Debug\netcoreapp2.2\E-BookStore.Api.AssemblyInfo.cs
+D:\demos\e-bookstore\E-BookStore.Api\obj\Debug\netcoreapp2.2\E-BookStore.Api.RazorTargetAssemblyInfo.cache
+D:\demos\e-bookstore\E-BookStore.Api\obj\Debug\netcoreapp2.2\E-BookStore.Api.dll
+D:\demos\e-bookstore\E-BookStore.Api\obj\Debug\netcoreapp2.2\E-BookStore.Api.pdb
+D:\demos\e-bookstore\E-BookStore.Api\bin\Debug\netcoreapp2.2\E.BookStore.Persistence.dll
+D:\demos\e-bookstore\E-BookStore.Api\bin\Debug\netcoreapp2.2\E.BookStore.Persistence.pdb
+D:\demos\e-bookstore\E-BookStore.Api\obj\Debug\netcoreapp2.2\E-BookStore.Api.csproj.CopyComplete

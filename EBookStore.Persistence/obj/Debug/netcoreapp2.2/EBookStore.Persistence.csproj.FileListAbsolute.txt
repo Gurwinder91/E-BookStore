@@ -1,0 +1,10 @@
+D:\demos\e-bookstore\EBookStore.Persistence\obj\Debug\netcoreapp2.2\EBookStore.Persistence.csproj.CoreCompileInputs.cache
+D:\demos\e-bookstore\EBookStore.Persistence\obj\Debug\netcoreapp2.2\EBookStore.Persistence.AssemblyInfoInputs.cache
+D:\demos\e-bookstore\EBookStore.Persistence\obj\Debug\netcoreapp2.2\EBookStore.Persistence.AssemblyInfo.cs
+D:\demos\e-bookstore\EBookStore.Persistence\bin\Debug\netcoreapp2.2\EBookStore.Persistence.deps.json
+D:\demos\e-bookstore\EBookStore.Persistence\bin\Debug\netcoreapp2.2\EBookStore.Persistence.runtimeconfig.json
+D:\demos\e-bookstore\EBookStore.Persistence\bin\Debug\netcoreapp2.2\EBookStore.Persistence.runtimeconfig.dev.json
+D:\demos\e-bookstore\EBookStore.Persistence\bin\Debug\netcoreapp2.2\EBookStore.Persistence.dll
+D:\demos\e-bookstore\EBookStore.Persistence\bin\Debug\netcoreapp2.2\EBookStore.Persistence.pdb
+D:\demos\e-bookstore\EBookStore.Persistence\obj\Debug\netcoreapp2.2\EBookStore.Persistence.dll
+D:\demos\e-bookstore\EBookStore.Persistence\obj\Debug\netcoreapp2.2\EBookStore.Persistence.pdb
