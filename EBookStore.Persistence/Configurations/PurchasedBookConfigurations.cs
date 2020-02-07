@@ -11,7 +11,8 @@ namespace EBookStore.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<PurchasedBook> builder)
         {
-            builder.HasKey(purchasedBook => new { purchasedBook .UserId, purchasedBook.BookId});
+            builder.HasKey(purchasedBook => purchasedBook.Id);
+            builder.Property(purchasedBook => purchasedBook.Id).HasDefaultValueSql($"nextval('{DatabaseGlobal.Schema}.auto_increment')");
 
             builder.HasOne(purchasedBook => purchasedBook.Book)
                 .WithMany(purchasedBook => purchasedBook.PurchasedBooks)
@@ -21,6 +22,8 @@ namespace EBookStore.Persistence.Configurations
                 .WithMany(purchasedBook => purchasedBook.PurchasedBooks)
                 .HasForeignKey(purchasedBook => purchasedBook.UserId);
 
+            builder.Property<DateTime>("PurchasedOn").ValueGeneratedOnAdd();
+            builder.Property<DateTime>("PurchasedOn").HasDefaultValueSql("(now() at time zone 'utc')");
         }
     }
 }

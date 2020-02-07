@@ -11,12 +11,16 @@ namespace EBookStore.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<Book> builder)
         {
-            builder.HasKey(e => e.Id);
+            builder.HasKey(book => book.Id);
+            builder.Property(book => book.Id).HasDefaultValueSql($"nextval('{DatabaseGlobal.Schema}.auto_increment')");
 
-            builder.Property(e => e.Name).IsRequired().HasMaxLength(100);
-            builder.Property(e => e.Title).IsRequired().HasMaxLength(100);
+            builder.Property(book => book.Name).IsRequired().HasMaxLength(100);
+            builder.Property(book => book.Title).IsRequired().HasMaxLength(100);
 
-            builder.Property(e => e.Cost);
+            builder.Property(book => book.Cost);
+
+            builder.Property<DateTime>("PublishedOn").ValueGeneratedOnAdd();
+            builder.Property<DateTime>("PublishedOn").HasDefaultValueSql("(now() at time zone 'utc')");
         }
     }
 }

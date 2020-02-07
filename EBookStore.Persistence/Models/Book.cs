@@ -16,7 +16,7 @@ namespace EBookStore.Persistence.Models
 
         public string Title { get; set; }
 
-        public string PublishedOn { get; set; }
+        public DateTime PublishedOn { get; set; }
 
         public decimal Cost { get; set; }
 

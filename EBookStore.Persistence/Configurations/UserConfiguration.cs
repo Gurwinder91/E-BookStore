@@ -11,7 +11,8 @@ namespace EBookStore.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.HasKey(e => e.Id);
+            builder.HasKey(user => user.Id);
+            builder.Property(user => user.Id).HasDefaultValueSql($"nextval('{DatabaseGlobal.Schema}.auto_increment')");
 
             builder.HasIndex(user => user.Email).IsUnique();
 

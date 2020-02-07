@@ -6,13 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="FluentValidation" Version="8.6.1" />
     <PackageReference Include="MediatR" Version="5.0.1" />
-    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="5.0.1" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.6.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EBookStore.Persistence\EBookStore.Persistence.csproj" />
+    <ProjectReference Include="..\EBookStore.Repository\EBookStore.Repository.csproj" />
   </ItemGroup>
 
 </Project>

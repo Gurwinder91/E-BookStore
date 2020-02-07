@@ -15,8 +15,16 @@ namespace EBookStore.Persistence
         public DbSet<Book> Books { get; set; }
         public DbSet<User> Users { get; set; }
 
+        public DbSet<PurchasedBook> PurchasedBooks { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.HasDefaultSchema(schema: DatabaseGlobal.Schema);
+
+            builder.HasSequence<long>("auto_increment")
+               .StartsAt(1)
+               .IncrementsBy(1);
+
             builder.ApplyConfigurationsFromAssembly(typeof(EBookStoreDbContext).Assembly);
         }
     }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace EBookStore.Application
+namespace EBookStore.Application.Exceptions
 {
     public class NotFoundException: Exception
     {

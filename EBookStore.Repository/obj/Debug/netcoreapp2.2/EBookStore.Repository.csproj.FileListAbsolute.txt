@@ -1,0 +1,12 @@
+D:\demos\e-bookstore\EBookStore.Repository\bin\Debug\netcoreapp2.2\EBookStore.Repository.deps.json
+D:\demos\e-bookstore\EBookStore.Repository\bin\Debug\netcoreapp2.2\EBookStore.Repository.dll
+D:\demos\e-bookstore\EBookStore.Repository\bin\Debug\netcoreapp2.2\EBookStore.Repository.pdb
+D:\demos\e-bookstore\EBookStore.Repository\bin\Debug\netcoreapp2.2\EBookStore.Persistence.dll
+D:\demos\e-bookstore\EBookStore.Repository\bin\Debug\netcoreapp2.2\EBookStore.Persistence.pdb
+D:\demos\e-bookstore\EBookStore.Repository\obj\Debug\netcoreapp2.2\EBookStore.Repository.csprojAssemblyReference.cache
+D:\demos\e-bookstore\EBookStore.Repository\obj\Debug\netcoreapp2.2\EBookStore.Repository.csproj.CoreCompileInputs.cache
+D:\demos\e-bookstore\EBookStore.Repository\obj\Debug\netcoreapp2.2\EBookStore.Repository.AssemblyInfoInputs.cache
+D:\demos\e-bookstore\EBookStore.Repository\obj\Debug\netcoreapp2.2\EBookStore.Repository.AssemblyInfo.cs
+D:\demos\e-bookstore\EBookStore.Repository\obj\Debug\netcoreapp2.2\EBookStore.Repository.csproj.CopyComplete
+D:\demos\e-bookstore\EBookStore.Repository\obj\Debug\netcoreapp2.2\EBookStore.Repository.dll
+D:\demos\e-bookstore\EBookStore.Repository\obj\Debug\netcoreapp2.2\EBookStore.Repository.pdb

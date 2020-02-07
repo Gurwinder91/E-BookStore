@@ -36,7 +36,7 @@ namespace EBookStore.Persistence
         {
             var books = new[]
            {
-             new Book{Name = "Demo",  AuthorName = "Gurwinder", Cost = 12, PublishedOn = "12-08-1991", Stock = 5, Title= "Gurwinder Demo"}
+             new Book{Name = "Demo",  AuthorName = "Gurwinder", Cost = 12, PublishedOn = DateTime.Now, Stock = 5, Title= "Gurwinder Demo"}
             };
 
             _context.Books.AddRange(books);

@@ -8,8 +8,6 @@ namespace EBookStore.Application.Users.Queries.IssueToken
 {
     public class UserIssueTokenModel
     {
-        public string Email { get; set; }
-
         public string Token { get; set; }
 
     }

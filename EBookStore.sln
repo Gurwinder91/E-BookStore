@@ -9,7 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EBookStore.Model", "EBookSt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EBookStore.Persistence", "EBookStore.Persistence\EBookStore.Persistence.csproj", "{5270DD5A-5629-4603-899F-3C87AE7345DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EBookStore.Application", "EBookStore.Application\EBookStore.Application.csproj", "{A69408BB-FB99-4FFA-AB1E-C75445D26D32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EBookStore.Application", "EBookStore.Application\EBookStore.Application.csproj", "{A69408BB-FB99-4FFA-AB1E-C75445D26D32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EBookStore.Application.Test", "EBookStore.Application.Test\EBookStore.Application.Test.csproj", "{EC22FC37-8108-4C17-AD57-C6A4A947A800}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EBookStore.Repository", "EBookStore.Repository\EBookStore.Repository.csproj", "{634CE467-CC39-4096-BEC2-C801EC2CC20E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EBookStore.Api.IntegrationTest", "EBookStore.Api.IntegrationTest\EBookStore.Api.IntegrationTest.csproj", "{9040BE51-380F-4376-A403-BEDF2A6E12C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{A69408BB-FB99-4FFA-AB1E-C75445D26D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A69408BB-FB99-4FFA-AB1E-C75445D26D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A69408BB-FB99-4FFA-AB1E-C75445D26D32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC22FC37-8108-4C17-AD57-C6A4A947A800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC22FC37-8108-4C17-AD57-C6A4A947A800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC22FC37-8108-4C17-AD57-C6A4A947A800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC22FC37-8108-4C17-AD57-C6A4A947A800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{634CE467-CC39-4096-BEC2-C801EC2CC20E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{634CE467-CC39-4096-BEC2-C801EC2CC20E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{634CE467-CC39-4096-BEC2-C801EC2CC20E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{634CE467-CC39-4096-BEC2-C801EC2CC20E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9040BE51-380F-4376-A403-BEDF2A6E12C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9040BE51-380F-4376-A403-BEDF2A6E12C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9040BE51-380F-4376-A403-BEDF2A6E12C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9040BE51-380F-4376-A403-BEDF2A6E12C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

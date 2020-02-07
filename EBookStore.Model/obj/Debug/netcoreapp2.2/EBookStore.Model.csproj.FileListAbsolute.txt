@@ -1,6 +1,7 @@
 D:\demos\e-bookstore\EBookStore.Model\bin\Debug\netcoreapp2.2\EBookStore.Model.deps.json
 D:\demos\e-bookstore\EBookStore.Model\bin\Debug\netcoreapp2.2\EBookStore.Model.dll
 D:\demos\e-bookstore\EBookStore.Model\bin\Debug\netcoreapp2.2\EBookStore.Model.pdb
+D:\demos\e-bookstore\EBookStore.Model\obj\Debug\netcoreapp2.2\EBookStore.Model.csprojAssemblyReference.cache
 D:\demos\e-bookstore\EBookStore.Model\obj\Debug\netcoreapp2.2\EBookStore.Model.csproj.CoreCompileInputs.cache
 D:\demos\e-bookstore\EBookStore.Model\obj\Debug\netcoreapp2.2\EBookStore.Model.AssemblyInfoInputs.cache
 D:\demos\e-bookstore\EBookStore.Model\obj\Debug\netcoreapp2.2\EBookStore.Model.AssemblyInfo.cs
