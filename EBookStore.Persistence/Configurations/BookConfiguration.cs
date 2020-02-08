@@ -15,7 +15,9 @@ namespace EBookStore.Persistence.Configurations
             builder.Property(book => book.Id).HasDefaultValueSql($"nextval('{DatabaseGlobal.Schema}.auto_increment')");
 
             builder.Property(book => book.Name).IsRequired().HasMaxLength(100);
-            builder.Property(book => book.Title).IsRequired().HasMaxLength(100);
+            builder.Property(book => book.AuthorName).IsRequired().HasMaxLength(100);
+
+            builder.Property(book => book.WrittenIn).IsRequired().HasMaxLength(50);
 
             builder.Property(book => book.Cost);
 

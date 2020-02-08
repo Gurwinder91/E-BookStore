@@ -27,9 +27,13 @@ namespace EBookStore.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasDefaultValueSql("nextval('bs.auto_increment')");
 
-                    b.Property<string>("AuthorName");
+                    b.Property<string>("AuthorName")
+                        .IsRequired()
+                        .HasMaxLength(100);
 
                     b.Property<decimal>("Cost");
+
+                    b.Property<string>("Description");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -39,11 +43,9 @@ namespace EBookStore.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasDefaultValueSql("(now() at time zone 'utc')");
 
-                    b.Property<int>("Stock");
-
-                    b.Property<string>("Title")
+                    b.Property<string>("WrittenIn")
                         .IsRequired()
-                        .HasMaxLength(100);
+                        .HasMaxLength(50);
 
                     b.HasKey("Id");
 
@@ -57,8 +59,6 @@ namespace EBookStore.Persistence.Migrations
                         .HasDefaultValueSql("nextval('bs.auto_increment')");
 
                     b.Property<int>("BookId");
-
-                    b.Property<int>("Count");
 
                     b.Property<string>("PaymentMode");
 
@@ -74,7 +74,7 @@ namespace EBookStore.Persistence.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("PurchasedBook");
+                    b.ToTable("PurchasedBooks");
                 });
 
             modelBuilder.Entity("EBookStore.Persistence.Models.User", b =>

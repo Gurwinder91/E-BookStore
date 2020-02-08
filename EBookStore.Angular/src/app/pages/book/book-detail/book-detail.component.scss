@@ -1,0 +1,14 @@
+
+@import "../../../core/scss/variables";
+@import "../../../core/scss/mixins";
+
+.detail-section {
+  padding: 20px;
+  .label {
+    @include bs-font-style(normal, #6a6a6a, normal, 12px, 16px);
+  }
+  .content {
+    @include bs-font-style(bold, $black, normal, 14px, 24px);
+    letter-spacing: 0.15px;
+  }
+}

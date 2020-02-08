@@ -1,0 +1,15 @@
+@import "../../core/scss/variables";
+@import "../../core/scss/mixins";
+
+.no-data {
+  @include bs-font-style(normal, $mat-black, normal, 16px, 24px);
+  
+  display: flex;
+  margin-top: 50px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-top: 20px;
+  align-items: center;
+  text-align: center;
+}

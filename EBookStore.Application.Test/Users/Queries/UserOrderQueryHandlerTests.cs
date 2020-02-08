@@ -47,7 +47,7 @@ namespace EBookStore.Application.Test.Users.Queries
                     Book = new Book
                     {
                         AuthorName = "Gurwinder",
-                        Title = "Test",
+                        WrittenIn = "English",
                         Name = "Test",
                     }
                 },
@@ -58,7 +58,7 @@ namespace EBookStore.Application.Test.Users.Queries
                     Book = new Book
                     {
                         AuthorName = "Gurwinder",
-                        Title = "Test",
+                        WrittenIn = "Hindi",
                         Name = "Test",
                     }
                 }

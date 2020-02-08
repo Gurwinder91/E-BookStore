@@ -14,13 +14,13 @@ namespace EBookStore.Persistence.Models
 
         public string AuthorName { get; set; }
 
-        public string Title { get; set; }
+        public string WrittenIn { get; set; }
+
+        public string Description { get; set; }
 
         public DateTime PublishedOn { get; set; }
 
         public decimal Cost { get; set; }
-
-        public int Stock { get; set; }
 
         public ICollection<PurchasedBook> PurchasedBooks { get; private set; }
     }

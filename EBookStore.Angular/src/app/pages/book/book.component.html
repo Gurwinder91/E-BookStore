@@ -1,0 +1,24 @@
+<div>
+    <span class="heading">Books</span>
+    <mat-grid-list rowHeight="270px" cols="4">
+        <mat-grid-tile *ngFor="let book of books" colspan="1" rowspan="1">
+            <mat-card [class.active]="book?.selected" [routerLink]="book.id">
+                <mat-card-content fxFlex>
+                    <div fxLayout fxLayoutAlign=" center" fxLayoutGap="8px">
+                        <span fxFlex class="mat-card-title">{{book?.name | titlecase}}</span>
+                    </div>
+                    <div class="list-card-main-section" fxLayout="column" fxLayoutGap="10px">
+                        <div fxLayout="column">
+                            <label class="content-tittle-label">Author Name</label>
+                            <label class="content-sub-tittle-label">{{book?.authorName | titlecase}}</label>
+                        </div>
+                        <div fxLayout="column">
+                            <label class="content-tittle-label">Cost</label>
+                            <label class="content-sub-tittle-label">{{book?.cost}}</label>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

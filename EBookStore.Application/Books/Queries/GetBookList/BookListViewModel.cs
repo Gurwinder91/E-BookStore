@@ -10,7 +10,7 @@ namespace EBookStore.Application.Books.Queries.GetBookList
 
         public string AuthorName { get; set; }
 
-        public string Title { get; set; }
+        public decimal Cost { get; set; }
 
         public int Id { get; set; }
     }

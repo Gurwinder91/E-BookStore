@@ -1,0 +1,36 @@
+<div fxLayoutAlign="center center">
+  <mat-card>
+    <div>
+      <p class="authentication-text">User Authentication</p>
+      <form [formGroup]="loginForm" fxLayout="column" fxLayoutAlign="space-between center" (ngSubmit)="whenSubmit()">
+        <mat-form-field fxFlex="40">
+          <input matInput placeholder="Email" formControlName="email" required>
+          <mat-error>
+            <div *ngIf="email.invalid && (email.dirty || email.touched)">
+              <div *ngIf="email.errors.required">
+                Email is required.
+              </div>
+              <div *ngIf="email.errors.email">
+                Email is not valid.
+              </div>
+            </div>
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field fxFlex="40">
+          <input matInput placeholder="Password" type="password" formControlName="password" required>
+          <mat-error>
+            <div *ngIf="password.invalid && (password.dirty || password.touched)">
+              <div *ngIf="password.errors.required">
+                Password is required.
+              </div>
+            </div>
+          </mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit"
+          [disabled]="loginForm.invalid || authenticateBtnDisabled">
+          Authenticate
+        </button>
+      </form>
+    </div>
+  </mat-card>
+</div>

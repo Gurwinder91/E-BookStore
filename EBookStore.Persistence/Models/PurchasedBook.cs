@@ -11,8 +11,6 @@ namespace EBookStore.Persistence.Models
 
         public DateTime PurchasedOn { get; set; }
 
-        public int Count { get; set; }
-
         public string PaymentMode { get; set; }
         public Book Book { get; set; }
         public User User { get; set; }

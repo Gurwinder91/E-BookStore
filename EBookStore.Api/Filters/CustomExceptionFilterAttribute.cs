@@ -24,6 +24,15 @@ namespace EBookStore.Filters
                 return;
             }
 
+            if(context.Exception is AlreadyExistException)
+            {
+                context.HttpContext.Response.ContentType = "application/json";
+                context.HttpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                context.Result = new JsonResult(context.Exception.Message);
+
+                return;
+            }
+
             var code = HttpStatusCode.InternalServerError;
 
             if (context.Exception is NotFoundException)

@@ -1,0 +1,26 @@
+<div class="detail-section" fxLayout="column" fxLayoutAlign="center" fxLayoutGap="10px">
+    <div fxLayout="column">
+        <span class="label">Book Name</span>
+        <span class="content">{{book?.name}}</span>
+    </div>
+    <div fxLayout="column">
+        <span class="label">Author Name</span>
+        <span class="content">{{book?.authorName}}</span>
+    </div>
+    <div fxLayout="column">
+        <span class="label">Written In</span>
+        <span class="content">{{book?.writtenIn}}</span>
+    </div>
+    <div fxLayout="column">
+        <span class="label">Description</span>
+        <span class="content">{{book?.description}}</span>
+    </div>
+    <div fxLayout="column">
+        <span class="label">Cost</span>
+        <span class="content">{{book?.cost}}</span>
+    </div>
+    <div fxLayoutAlign="center">
+        <button mat-raised-button color="accent" (click)="buyBook()">Buy Book</button>
+    </div>
+
+</div>

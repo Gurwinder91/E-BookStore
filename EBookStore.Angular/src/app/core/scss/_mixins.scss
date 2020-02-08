@@ -1,0 +1,7 @@
+@mixin bs-font-style($font-weight, $color: $black, $font-style: normal, $font-size: 14px, $line-height: 16px) {  
+    font-weight: $font-weight;
+    color: $color;
+    font-style: $font-style;
+    font-size: $font-size;  
+    line-height: $line-height;
+}

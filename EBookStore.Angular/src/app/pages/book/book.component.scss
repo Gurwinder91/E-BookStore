@@ -1,0 +1,27 @@
+@import '../../core/scss/mixins';
+@import '../../core/scss/variables';
+
+.mat-card {
+  width: 274px;
+  height: 220px;
+  margin: 10px;
+  cursor: pointer;
+  &.active {
+    border: #1c337b 1px solid;
+  }
+  .mat-card-title {
+    @include bs-font-style(500, $black, normal, 20px, 24px);
+  }
+  .content-tittle-label {
+    @include bs-font-style(normal, #6a6a6a, normal, 12px, 16px);
+  }
+  
+  .content-sub-tittle-label {
+    @include bs-font-style(bold, $black, normal, 14px, 24px);
+    letter-spacing: 0.15px;
+  }
+}
+
+
+
+

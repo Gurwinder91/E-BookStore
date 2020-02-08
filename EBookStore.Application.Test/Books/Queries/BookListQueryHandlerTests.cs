@@ -34,22 +34,8 @@ namespace EBookStore.Application.Test.Books.Queries
             // Arrange
             var books = new TestAsyncEnumerable<Book>(new []
             {
-                 new Book {
-                     AuthorName = "Test",
-                      Cost = 12,
-                      Name = "Test Book",
-                      PublishedOn = DateTime.Now,
-                      Stock = 5,
-                      Title = "Test Book Title"
-                },
-                 new Book {
-                     AuthorName = "Test1",
-                      Cost = 12,
-                      Name = "Test1 Book",
-                      PublishedOn = DateTime.Now,
-                      Stock = 5,
-                      Title = "Test1 Book Title"
-                }
+                 new Book{Name = "Half Girlfriend",  AuthorName = "Chetan Bhagat", Cost = 900, PublishedOn = DateTime.Now.AddYears(-6), WrittenIn = "English", Description= "Lorum Ipsum is dummy data" },
+                 new Book{Name = "Five Point Someone",  AuthorName = "Chetan Bhagat", Cost = 1200, PublishedOn = DateTime.Now.AddYears(-16), WrittenIn = "English", Description= "Lorum Ipsum is dummy data"}
             }).AsQueryable();
 
             var sut = new BookListQueryHandler(_mockBookRepository.Object, _mapper);

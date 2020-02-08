@@ -30,6 +30,12 @@ namespace EBookStore.Application.PurchaseBooks.Commands.PurchaseBook
                 throw new NotFoundException(nameof(User), request.UserEmail);
             }
 
+            var bookAlreadyPurchased = await _purchasedBookrepository.FindAsync(book => book.BookId == request.BookId && book.UserId == foundUser.Id, cancellationToken);
+            if(bookAlreadyPurchased != null)
+            {
+                throw new AlreadyExistException("You already purchased this book");
+            }
+
             var purchaseBook = new PurchasedBook
             {
                 BookId = request.BookId,

@@ -68,15 +68,7 @@ namespace EBookStore.Api.IntegrationTest.TestScenarios
                 Email = "abc@abc.com",
                 Password = "233223"
             };
-            var book = new Book
-            {
-                AuthorName = "Test",
-                Cost = 12,
-                Name = "Test Book",
-                PublishedOn = DateTime.Now,
-                Stock = 5,
-                Title = "Test Book Title"
-            };
+            var book = new Book { Name = "Half Girlfriend", AuthorName = "Chetan Bhagat", Cost = 900, PublishedOn = DateTime.Now.AddYears(-6), WrittenIn = "English", Description = "Lorum Ipsum is dummy data" };
             var purchaseBook = new PurchasedBook
             {
                 Book = book,
@@ -84,7 +76,6 @@ namespace EBookStore.Api.IntegrationTest.TestScenarios
                 BookId = book.Id,
                 UserId = user.Id,
                 PaymentMode = "Cash",
-                Count = 2
             };
             _context.PurchasedBooks.Add(purchaseBook);
             _context.SaveChanges();
