@@ -57,21 +57,4 @@ describe('Loader Interceptor', () => {
         expect(loaderService.visible).toBeFalsy();
     });
 
-    it('Every request should call loader show method if header have childSpinner key', () => {
-
-        spyOn(loaderService, 'show').and.callThrough();
-
-        const HTTP_HEADERS = { headers: new HttpHeaders({ 'childSpinner': 'TRUE' }) };
-        httpClient.get(URL, HTTP_HEADERS).subscribe(response => {
-            expect(response).toBeTruthy();
-        });
-
-        const REQ = httpMock.expectOne(URL);
-        expect(REQ.request.headers.has('childSpinner')).toBeFalsy();
-
-        REQ.flush([{ status: 'Success' }]);
-
-        expect(loaderService.show).not.toHaveBeenCalled();
-    });
-
 });

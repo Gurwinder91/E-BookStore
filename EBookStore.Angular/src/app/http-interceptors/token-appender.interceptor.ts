@@ -20,8 +20,7 @@ export class TokenAppenderInterceptor implements HttpInterceptor {
     req: HttpRequest<any>,
     next: HttpHandler
   ): Observable<HttpEvent<any>> {
-
-    const token = this.authService.tokenWithBearer;
+   
     if (req.headers.has('NO_Auth')) {
       const noAuthReq = req.clone({
         headers: req.headers.delete('NO_Auth')
@@ -29,7 +28,8 @@ export class TokenAppenderInterceptor implements HttpInterceptor {
 
       return next.handle(noAuthReq);
     }
-
+    
+    const token = this.authService.tokenWithBearer;
     const authReq = req.clone({
       headers: req.headers.set('Authorization', token)
     });

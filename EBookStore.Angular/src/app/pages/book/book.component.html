@@ -5,9 +5,10 @@
             <mat-card [class.active]="book?.selected" [routerLink]="book.id">
                 <mat-card-content fxFlex>
                     <div fxLayout fxLayoutAlign=" center" fxLayoutGap="8px">
+                        <img src="/assets/images/book.png">
                         <span fxFlex class="mat-card-title">{{book?.name | titlecase}}</span>
                     </div>
-                    <div class="list-card-main-section" fxLayout="column" fxLayoutGap="10px">
+                    <div class="book-extra-info" fxLayout="column" fxLayoutGap="10px">
                         <div fxLayout="column">
                             <label class="content-tittle-label">Author Name</label>
                             <label class="content-sub-tittle-label">{{book?.authorName | titlecase}}</label>

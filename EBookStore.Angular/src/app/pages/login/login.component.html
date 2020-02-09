@@ -1,7 +1,8 @@
 <div fxLayoutAlign="center center">
   <mat-card>
+    <img src="/assets/images/book-logo.png">
     <div>
-      <p class="authentication-text">User Authentication</p>
+      <p class="authentication-text"> Authentication</p>
       <form [formGroup]="loginForm" fxLayout="column" fxLayoutAlign="space-between center" (ngSubmit)="whenSubmit()">
         <mat-form-field fxFlex="40">
           <input matInput placeholder="Email" formControlName="email" required>

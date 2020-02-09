@@ -16,14 +16,15 @@ export class BsProgressBarComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.subscription = this.loaderService.loaderState
-    .subscribe((state: LoaderState) => {
-      setTimeout(() => {
-        this.show = state.show;
-      }, 50);
-    });
+      .subscribe((state: LoaderState) => {
+        setTimeout(() => {
+          this.show = state.show;
+        }, 50);
+      });
   }
 
   ngOnDestroy() {
-    this.subscription.unsubscribe();
+    if (this.subscription)
+      this.subscription.unsubscribe();
   }
 }

@@ -1,5 +1,5 @@
-@import '../../core/scss/mixins';
-@import '../../core/scss/variables';
+@import "../../core/scss/mixins";
+@import "../../core/scss/variables";
 
 .mat-card {
   padding: 20px 40px;
@@ -8,8 +8,10 @@
   mat-form-field {
     width: 100%;
   }
-}
-
-.authentication-text {
+  img {
+    width: 300px;
+  }
+  .authentication-text {
     @include bs-font-style(normal, $black, normal, 34px, 36px);
   }
+}

@@ -1,5 +1,5 @@
-@import '../../core/scss/mixins';
-@import '../../core/scss/variables';
+@import "../../core/scss/mixins";
+@import "../../core/scss/variables";
 
 .mat-card {
   width: 274px;
@@ -12,16 +12,20 @@
   .mat-card-title {
     @include bs-font-style(500, $black, normal, 20px, 24px);
   }
-  .content-tittle-label {
-    @include bs-font-style(normal, #6a6a6a, normal, 12px, 16px);
+
+  .book-extra-info {
+    padding: 25px 20px;
+    .content-tittle-label {
+      @include bs-font-style(normal, #6a6a6a, normal, 12px, 16px);
+    }
+
+    .content-sub-tittle-label {
+      @include bs-font-style(bold, $black, normal, 14px, 24px);
+      letter-spacing: 0.15px;
+    }
   }
-  
-  .content-sub-tittle-label {
-    @include bs-font-style(bold, $black, normal, 14px, 24px);
-    letter-spacing: 0.15px;
+  img {
+    width: 50px;
+    height: 50px;
   }
 }
-
-
-
-

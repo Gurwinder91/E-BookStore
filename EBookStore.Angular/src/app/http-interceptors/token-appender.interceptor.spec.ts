@@ -6,7 +6,7 @@ import { AuthService } from '../services/auth/auth.service';
 import { TokenAppenderInterceptor } from './token-appender.interceptor';
 
 class MockedAuthService {
-    getAuthorizationHeaderValue(): string {
+    get tokenWithBearer(): string {
         return 'Bearer 122352sfgsfsd43432';
     }
 }

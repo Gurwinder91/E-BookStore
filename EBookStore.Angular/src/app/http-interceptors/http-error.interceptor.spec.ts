@@ -56,12 +56,12 @@ describe('Http Error Interceptor', () => {
             fail('request fail with bad request');
         }, (error: HttpErrorResponse) => {
             expect(error.status).toBe(400);
-            expect(error.error['Error']).toBe('code should be unique');
+            expect(error.error).toBe('code should be unique');
         });
 
         const REQ = httpMock.expectOne(URL);
 
-        REQ.flush({ Error: 'code should be unique' }, { status: 400, statusText: 'Bad Request' });
+        REQ.flush('code should be unique', { status: 400, statusText: 'Bad Request' });
 
         expect(notificationService.loggedMessage).toBe('code should be unique');
     });
@@ -79,7 +79,7 @@ describe('Http Error Interceptor', () => {
 
         REQ.flush(null, { status: 401, statusText: 'UnAuthorized' });
 
-        expect(router.navigatedUrl).toBe('/account/signin');
+        expect(router.navigatedUrl).toBe('/login');
     });
 
     it('should catch http error other then 400 0r 401 with expected message ', () => {

@@ -1,9 +1,0 @@
-D:\demos\e-bookstore\E-BookStore.Model\bin\Debug\netcoreapp2.2\E-BookStore.Model.deps.json
-D:\demos\e-bookstore\E-BookStore.Model\bin\Debug\netcoreapp2.2\E-BookStore.Model.dll
-D:\demos\e-bookstore\E-BookStore.Model\bin\Debug\netcoreapp2.2\E-BookStore.Model.pdb
-D:\demos\e-bookstore\E-BookStore.Model\obj\Debug\netcoreapp2.2\E-BookStore.Model.csprojAssemblyReference.cache
-D:\demos\e-bookstore\E-BookStore.Model\obj\Debug\netcoreapp2.2\E-BookStore.Model.csproj.CoreCompileInputs.cache
-D:\demos\e-bookstore\E-BookStore.Model\obj\Debug\netcoreapp2.2\E-BookStore.Model.AssemblyInfoInputs.cache
-D:\demos\e-bookstore\E-BookStore.Model\obj\Debug\netcoreapp2.2\E-BookStore.Model.AssemblyInfo.cs
-D:\demos\e-bookstore\E-BookStore.Model\obj\Debug\netcoreapp2.2\E-BookStore.Model.dll
-D:\demos\e-bookstore\E-BookStore.Model\obj\Debug\netcoreapp2.2\E-BookStore.Model.pdb

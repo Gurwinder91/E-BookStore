@@ -45,7 +45,7 @@ describe('BookService', () => {
   });
 
   it('book should be purchased', () => {
-    httpClientSpy.post.and.returnValue(of());
+    httpClientSpy.post.and.returnValue(of({}));
     const service: BookService = new BookService(<any>httpClientSpy);
     service.purchaseBook(1).subscribe(res => {
       expect(res).toEqual({}, 'book purchased');
