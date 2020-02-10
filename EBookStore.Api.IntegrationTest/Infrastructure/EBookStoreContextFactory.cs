@@ -11,22 +11,8 @@ namespace EBookStore.Api.IntegrationTest.Infrastructure
     {
         public static void Create(EBookStoreDbContext context)
         {
-
             context.Database.EnsureCreated();
-
-            context.Books.AddRange(new[] {
-                new Book{Name = "Five Point Someone",  AuthorName = "Chetan Bhagat", Cost = 1200, PublishedOn = DateTime.Now.AddYears(-16), WrittenIn = "English", Description= "Lorum Ipsum is dummy data"},
-               new Book{Name = "Half Girlfriend",  AuthorName = "Chetan Bhagat", Cost = 900, PublishedOn = DateTime.Now.AddYears(-6), WrittenIn = "English", Description= "Lorum Ipsum is dummy data" }
-            });
-
-            context.Users.Add(
-                new User
-                {
-                    Email = "abc@abc.com",
-                    Password = "123456"
-                });
-
-            context.SaveChanges();
+            EBookStoreDbInitializer.Initialize(context);           
         }
 
         public static void Destroy(EBookStoreDbContext context)

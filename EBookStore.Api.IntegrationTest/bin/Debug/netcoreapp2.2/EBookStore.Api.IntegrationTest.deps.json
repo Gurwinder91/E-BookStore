@@ -3189,7 +3189,8 @@
       },
       "EBookStore.Repository/1.0.0": {
         "dependencies": {
-          "EBookStore.Persistence": "1.0.0"
+          "EBookStore.Persistence": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.2.0"
         },
         "runtime": {
           "EBookStore.Repository.dll": {}

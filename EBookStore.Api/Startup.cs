@@ -10,8 +10,7 @@ using EBookStore.Application.Users.Queries.IssueToken;
 using EBookStore.Application.Users.Queries.VerifyUser;
 using EBookStore.Filters;
 using EBookStore.Persistence;
-using EBookStore.Repository.IRepositories;
-using EBookStore.Repository.Repositories;
+using EBookStore.Repository;
 using FluentValidation.AspNetCore;
 using MediatR;
 using MediatR.Pipeline;
@@ -22,10 +21,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.Swagger;
 
 namespace EBookStore
 {
@@ -54,9 +51,7 @@ namespace EBookStore
 
             ConfigureDatabase(services);
 
-            services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<IBookRepository, BookRespository>();
-            services.AddScoped<IPurchasedBookRepository, PurchasedBookRepository>();
+            services.AddRepositories();
 
             ConfigureJwtToken(services);
             AddCustomerSwagger(services);
